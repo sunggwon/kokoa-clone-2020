@@ -1,0 +1,32 @@
+.nav__container{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    background-color: var(--gray);
+    box-sizing:border-box;
+    padding: 20px 50px;
+    border-top: 1pt solid rgba(0,0,0,0.2);
+}
+.nav__conatiner__column__link{
+    position: relative;
+}
+
+#nav__container__talk-notify{
+    position: absolute;
+    
+    bottom: 10px;
+    left: 13px;
+}
+
+#nav__container__more-notify{
+    position: absolute;
+    display:block;
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: tomato;
+    left:23px;
+    bottom:20px;
+}

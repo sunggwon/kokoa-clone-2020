@@ -1,0 +1,13 @@
+.chat-main .user-component .user-component__column:last-child {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 10pt;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-end;
+       
+}
+.user-component__noti{
+    margin-top: 5px;
+}

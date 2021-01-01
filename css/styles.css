@@ -1,36 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import 'reset.css';
+@import 'variable.css';
+
+/* Component */
+@import 'components/status-style.css';
+@import 'components/nav-bar.css';
+@import 'components/header1.css';
+@import 'components/user-component.css';
+@import 'components/seperate-component.css';
+
+/* Screen */
+@import 'screens/login.css';
+@import 'screens/firends.css';
+@import 'screens/chats.css';
 
 body{
-    font-family: "Open Sans", sans-serif
+    font-family: "Open Sans", sans-serif;
 }
 
-.status-bar{
-    display: flex;
-    justify-content: center;
-}
-
-.status-bar__column{
-    width: 33%;
-    align-items: center;
-}
-
-.status-bar__column:nth-child(2){
-    display: flex;
-    justify-content: center;
-}
-
-.status-bar__column:first-child span{
-    margin-right: 5px;
-}
-
-.status-bar__column:last-child{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.status-bar__column .fa-battery-full{
-    margin: 0px 5px
-}
-.status-bar__column .fa-sync-alt{
-    margin-right: 5px;
+main{
+    margin: 0px var(--content-margin);
 }
