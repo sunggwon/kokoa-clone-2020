@@ -1,0 +1,210 @@
+#chat-content-body{
+    background-color: #abc1d1;
+}
+
+#chat-content-body .status-bar{
+    z-index: 2;
+}
+
+#chat-content-body .content-screen-header{
+    background-color: #abc1d1;
+    z-index: 1;
+}
+
+.chat-content-main{
+    padding-top: 110px;
+}
+
+.main-chat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-stamp{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    border-radius: 15px;
+    padding: 5px 10px;
+    
+}
+.conv-row{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+}
+.conv-frame{
+    display: flex;
+    flex-direction: column;
+}
+.conv-profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 25%;
+    margin-right: 10px;
+}
+.conv-name{
+    font-size: 11pt;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+}
+
+
+.conv-content{
+    padding: 10px;
+    border-radius: 12px;
+    border-top-left-radius: 0px;
+    background-color: white;
+    margin-right: 5px;
+}
+
+.conv-content-frame{
+    display: flex; 
+    align-items: flex-end;
+}
+
+.conv-time{
+    font-size: 9pt;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.conv-user-frame{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.conv-user-frame .conv-content-frame{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.conv-user-frame .conv-content{
+    margin-left: 5px;
+    border-radius: 12px;
+    border-top-right-radius: 0px;
+    background-color: var(--yellow);
+
+}
+
+.reply-form{
+    position: fixed;;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    padding: 12px 0px;
+    color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+}
+
+.reply-form:focus-within #reply-form-added,
+.reply-form:focus-within #reply-form-floating-btn
+{
+    visibility: hidden;
+    width: 0px;
+}
+
+.reply-form:focus-within{
+    background-color: transparent;
+    bottom: 10px;
+}
+
+.reply-form:focus-within #reply-form-message{
+    width: 100%;
+}
+
+
+#reply-form-added{
+    padding: 10px 10px;
+    font-size: 20px;
+    text-align: center;
+    width: 10%;
+}
+
+#reply-form-message{
+    width: 90%;
+}
+
+#reply-form-message input{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 8px 10px;
+    font-size: 12pt;
+    border: 1px solid rgba(0, 0, 0, 1);
+    outline: none;
+
+}
+
+#reply-emoticon{
+    position: absolute;
+    top: 20px;
+    right: 48px;
+    font-size: 17pt;
+}
+
+#reply-form-floating-btn button{
+    border-radius: 50%;
+    background-color: var(--yellow);
+    border :none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right:5px;
+    top: 17px;
+}
+
+#reply-form-floating-btn button:active,
+#reply-form-floating-btn button:focus{
+    outline: none;
+}
+
+@keyframes chat-timestamp-animation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes chat-left-to-right-animation{
+    from{
+        
+    }
+    to{
+        transform: none;
+    }
+}
+
+@keyframes chat-right-to-left-animation{
+    from{
+        
+    }
+    to{
+        transform: none;
+    }
+}
+
+.chat-content-main .time-stamp{
+    animation: chat-timestamp-animation 0.5s linear forwards;
+}
+
+.chat-content-main .conv-row:nth-child(2){
+    transform: translateX(-180px);
+    animation: chat-left-to-right-animation 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+.chat-content-main .conv-row:nth-child(3){
+    transform: translateX(180px);
+    animation: chat-right-to-left-animation 0.5s ease-in-out forwards;
+    animation-delay: 1s;
+}

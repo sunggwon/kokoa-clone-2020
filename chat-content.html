@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Content - Clone Kokoa Talk</title>
+</head>
+<body id="chat-content-body">
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Serivice</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <i class="fas fa-sync-alt"></i>
+            <sapn>100%</sapn>
+            <i class="fas fa-battery-full"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+    
+    <header class="content-screen-header">
+            <div class="content-screen-column">
+                <a href="chat.html">
+                   <i class="fas fa-chevron-left fa-lg"></i>
+                </a>
+            </div>
+        
+        <div class="content-screen-column"><h1>Sung Gwon</h1></div>
+        <div class="content-screen-column"><i class="fas fa-search fa-lg"></i></div>
+            
+    </header>
+
+    <main class="chat-content-main main-chat">
+       <div class="time-stamp">Tuesday, June 30, 2020</div>
+
+       <div class="conv-row">
+            <img src="avatar.png" class="conv-profile"/>
+            <div class="conv-frame">
+                <span class="conv-name">Sung Gwon</span>           
+                <div class="conv-content-frame">
+                    <span class="conv-content">Hi!</span>
+                    <span class="conv-time">21:27</span>
+                </div>
+            </div>
+       </div>
+       
+       <div class="conv-row">
+            <div class="conv-user-frame">      
+                <div class="conv-content-frame">
+                    <span class="conv-content">What's up</span>
+                    <span class="conv-time">21:27</span>
+                </div>
+            </div>
+       </div>
+    </main> 
+
+    <form action="Get" class="reply-form">
+        <span id="reply-form-added"><i class="far fa-plus-square fa-lg"></i></span>
+        <div id="reply-form-message"><input type="text" placeholder="Input text"/></div>
+        <div id="reply-form-floating-btn">
+            <span id="reply-emoticon"><i class="far fa-grin-beam" ></i></span>
+            <button>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+        
+    </form>
+    <div class="bigsize-screen">
+        Window size is too big!!
+    </div>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+
+.recommands-firends{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 10pt;
+    font-weight: 600;
+    padding: 5px 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.recommands-firends__title{
+    font-size: 9.5pt;
+}
+
+.recomandes-firends__text{
+    display: flex;
+    justify-content: center;
+    padding:95px 0px;
+
+}
+
+.openchat-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.openchat-container__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.openchat-container__text__title{
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+.openchat-container__text__hash{
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.openchat-container__text__members {
+    display: flex;
+    align-items: center;    
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.openchat-container__text__members img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.openchat-container__text__number{
+    font-size: 10pt;
+}
+
+.penchat-container__active{
+    font-size: 11pt;
+    color: rgb(255, 129, 129);
+}
+.openchat-thumbnail{
+    display:flex;
+    position: relative;
+}
+.openchat-thumbnail img{
+    width: 96px;
+    height: 96px;
+    border-radius: 15px;
+}
+.openchat-like{
+    display:flex;
+    position: absolute;
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    color: white;
+    font-size: 8pt;
+    bottom: 8px;
+    right: 8px;
+}
+
+.openchat-like i{
+    margin-right: 3px;
+} 
+
+@keyframes like-heart-animation{
+    0%{
+        color:white;
+    }
+    50%{
+        color:tomato;
+        transform: scale(1.2);
+    }
+    100%{
+        color:white;
+    }
+}
+.openchat-like:hover .fa-heart{
+    will-change: transform;
+    animation: like-heart-animation 1s linear infinite;
+}

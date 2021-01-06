@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find - Clone Kokoa Talk</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Serivice</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <i class="fas fa-sync-alt"></i>
+            <sapn>100%</sapn>
+            <i class="fas fa-battery-full"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+    
+    <header class="screen-header">
+        <h1 class="screen-header__title">Find</h1>
+        <div>
+            <span class="screen-header__link"><i class="fas fa-search fa-lg"></i></span>
+            <span class="screen-header__link">
+                <span id="nav__container__more-notify"></span>
+                <i class="fas fa-cog fa-lg"></i>
+            </span>
+
+        </div>
+    </header>
+
+    <main class="find-main">
+        <div class="icon-lists">
+            <div class="icon-lists__column"><i class="fas fa-qrcode"></i> QR Code</div>
+            <div class="icon-lists__column"><i class="far fa-address-book"></i> Add by <br/>Contacts</div>
+            <div class="icon-lists__column"><i class="fas fa-fingerprint"></i> Add by id</div>
+            <div class="icon-lists__column"><i class="far fa-envelope"></i> Invite</div>
+        </div>
+        <div class="recommands-firends">
+            <span class="recommands-firends__title">Recodmmended Firends</span>
+            <span class="recomandes-firends__text">You have no recommended friends.</span>
+        </div>
+
+        <div class="seperate-bar">
+            <span>Open Chat</span>
+            <span>
+                Go to Openchat Home
+                <i class="fas fa-chevron-right fa-sm"></i>        
+            </span>
+        </div>
+
+        <div class="openchat-container">
+            <div class="openchat-container__text">
+                <span class="openchat-container__text__title">#BTS</span>
+                <span class="openchat-container__text__hash">#bts#army#friends</span>
+                <span class="openchat-container__text__members">
+                    <img src="avatar.png"/>
+                    <span class="openchat-container__text__number">802 members</span>
+                    <div class="divider"></div>
+                    <span class="penchat-container__active">Active</span>
+                </span>
+            </div>
+            <div class="openchat-thumbnail">
+                <img src="avatar.png"/>
+                <div class="openchat-like">
+                    <i class="fas fa-heart"></i>
+                    <span>999+</span>
+                </div>
+            </div>
+        </div>
+
+    </main>    
+
+    <div class="bigsize-screen">
+        Window size is too big!!
+    </div>
+    <nav class="nav">
+        <ul class="nav__container">
+            <li class="nav__conatiner__column">
+                <a class="nav__conatiner__column__link" href="friends.html">
+                    <i class="far fa-user fa-lg"></i>
+                </a>
+            </li>
+            <li class="nav__conatiner__column">
+                <a class="nav__conatiner__column__link" href="chat.html">
+                    <span id="nav__container__talk-notify" class="badge">1</span>
+                    <i class="far fa-comment fa-lg"></i>
+                </a>
+               
+            </li>
+            <li class="nav__conatiner__column">
+                <a class="nav__conatiner__column__link" href="search.html">
+                    <i class="fas fa-search fa-lg"></i>
+                </a>
+            </li>
+            <li class="nav__conatiner__column">
+                <a class="nav__conatiner__column__link" href="more.html">
+                    <span id="nav__container__more-notify"></span>
+                    <i class="fas fa-ellipsis-h fa-lg"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

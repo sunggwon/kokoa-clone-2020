@@ -2,6 +2,7 @@
     position:fixed;
     bottom: 0;
     width: 100%;
+    height: 60px;
     display:flex;
     justify-content: space-between;
     background-color: var(--gray);
@@ -13,11 +14,30 @@
     position: relative;
 }
 
+
+
+@keyframes noti-animation{
+    0%{
+        transform: none;
+    }
+    50%{
+        transform: rotateY(360deg) translateY(-8px);
+    }
+    100%{
+        transform: none;
+    }
+}
+
+.nav__conatiner__column__link .badge{
+    animation: noti-animation 1.5s linear infinite;   
+}
+
+
 #nav__container__talk-notify{
     position: absolute;
-    
     bottom: 10px;
     left: 13px;
+    
 }
 
 #nav__container__more-notify{
@@ -29,4 +49,31 @@
     background-color: tomato;
     left:23px;
     bottom:20px;
+}
+
+@keyframes nav-ani {
+    from{
+        
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
+}
+.nav__conatiner__column {
+    opacity: 0;
+    transform: translateY(8px);
+    animation: nav-ani 0.3s linear forwards;
+}
+
+.nav__conatiner__column:nth-child(2){
+    animation-delay: 0.3s;
+}
+
+.nav__conatiner__column:nth-child(3){
+    animation-delay: 0.6s;
+}
+
+.nav__conatiner__column:last-child{
+    animation-delay: 0.9s;
 }
